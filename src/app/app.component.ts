@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Chart, Legend, plugins, registerables } from 'chart.js';
+import { FooterComponent } from './footer/footer.component';
 
 Chart.register(...registerables);
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterLink, RouterOutlet],
+  imports: [RouterLink, RouterOutlet, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -33,7 +34,13 @@ export class AppComponent implements OnInit{
         }]
       },
       options: {
-        aspectRatio: 1
+        aspectRatio: 1,
+        plugins: {
+          legend: {
+            position: 'top',
+            align: 'center'
+          }
+        }
       }
   };
   public collegeAcceptance: any = {
@@ -112,6 +119,12 @@ export class AppComponent implements OnInit{
       scales: {
         y: {
           beginAtZero: true
+        }
+      },
+      plugins: {
+        legend: {
+          position: 'top',
+          align: 'center'
         }
       }
     },

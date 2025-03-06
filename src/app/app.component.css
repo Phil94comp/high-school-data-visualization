@@ -1,25 +1,73 @@
-h1, p {
+h1 {
   text-align: center;
+}
+
+p {
+  text-align: left justify;
+  margin-left: 29rem;
+  padding-right: 28rem;
 }
 
 h3 {
   text-align: center;
-  margin-left: 50px;
+  margin-left: 3.125rem;
 }
 
 .chart-container {
-  height: 400px;
-  width: 400px;
-  margin-left: 550px;
+  height: 31.25rem;
+  width: 31.25rem;
+  margin-left: 31.25rem;
 }
 
 .college-acceptance-chart, .math-and-reading-proficiency-chart, .scholarships-chart, .financial-aid-chart{
-  height: 600px;
-  width: 600px;
-  margin-left: 437px;
-  margin-bottom: -250px;
+  height: 37.5rem;
+  width: 37.5rem;
+  margin-left: 27.3125rem;
+  margin-bottom: -15.625rem;
 }
 
 img {
-  margin-left: 458px;
+  margin-left: 28.625rem;
+}
+
+.closing-pitch {
+  margin-bottom: 12rem;
+}
+
+app-footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 37.5em){
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    margin-left: 0rem;
+  }
+
+  p {
+    margin-left: 0rem;
+    font-size: 0.75rem;
+    padding-right: 0rem;
+  }
+
+  .chart-container {
+    height: 18rem;
+    width: 18rem;
+    margin-left: 2rem;
+  }
+
+  .college-acceptance-chart, .math-and-reading-proficiency-chart, .scholarships-chart, .financial-aid-chart{
+    height: 21.875rem;
+    width: 21.875rem;
+    margin-left: 0rem;
+    margin-bottom: -5.625rem;
+  }
+
+  img {
+    margin-left: 3rem;
+    max-width: 75%;
+  }
 }
