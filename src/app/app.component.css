@@ -43,10 +43,6 @@ app-footer {
     font-size: 1.25rem;
   }
 
-  h3 {
-    margin-left: 0rem;
-  }
-
   p {
     margin-left: 0rem;
     font-size: 0.75rem;
@@ -75,10 +71,6 @@ app-footer {
 @media only screen and (min-width: 31.25em) and (max-width: 43.75em) {
   h1 {
     font-size: 1.5rem;
-  }
-
-  h3 {
-    margin-left: 0rem;
   }
 
   p {
@@ -111,10 +103,6 @@ app-footer {
     font-size: 2rem;
   }
 
-  h3 {
-    margin-left: 0rem;
-  }
-
   p {
     margin-left: 7rem;
     font-size: 1.25rem;
@@ -137,5 +125,63 @@ app-footer {
   img {
     margin-left: 6.5625rem;
     max-width: 75%;
+  }
+}
+
+@media only screen and (min-width: 56.25em) and (max-width: 68.75em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin-left: 10.5rem;
+    font-size: 1.5rem;
+    padding-right: 10.5rem;
+  }
+
+  .chart-container {
+    height: 31.25rem;
+    width: 31.25rem;
+    margin-left: 12.5rem;
+  }
+
+  .college-acceptance-chart, .math-and-reading-proficiency-chart, .scholarships-chart, .financial-aid-chart{
+    height: 37.5rem;
+    width: 37.5rem;
+    margin-left: 10rem;
+    margin-bottom: -15.625rem;
+  }
+
+  img {
+    margin-left: 10rem;
+  }
+}
+
+@media only screen and (min-width: 68.75em) and (max-width: 80em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin-left: 23rem;
+    font-size: 1.5rem;
+    padding-right: 23rem;
+  }
+
+  .chart-container {
+    height: 31.25rem;
+    width: 31.25rem;
+    margin-left: 23rem;
+  }
+
+  .college-acceptance-chart, .math-and-reading-proficiency-chart, .scholarships-chart, .financial-aid-chart{
+    height: 37.5rem;
+    width: 37.5rem;
+    margin-left: 20.5rem;
+    margin-bottom: -15.625rem;
+  }
+
+  img {
+    margin-left: 22rem;
   }
 }
